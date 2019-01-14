@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Custom Object</title>
+    <script type="text/JavaScript">
+      var dog = new Object();
+      dog.name = "Teddy";
+      dog.gender = "male";
+      dog.age = 3;
+      dog.breed = "mixed";
+
+      document.writeln("The dog's name is : " + dog.name + "<br>" +
+                      "The dog's gender is : " + dog.gender + "<br>" + 
+                      "The dog's age is : " + dog.age + "<br>" +
+                      "The dog's breed is : " + dog.breed + "<br>");
+
+                      for(x in dog){
+                          document.writeln(dog[x] + "<br>");
+                      }
+
+    </script>
+  </head>
+  <body></body>
+</html>

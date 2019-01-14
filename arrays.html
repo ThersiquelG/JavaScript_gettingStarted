@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+    var airlines = new Array();
+    airlines[0] = "Delta";
+    airlines[1] = "US airways";
+    airlines[2] = "American";
+    airlines[3] = "jetBlue" ;
+    airlines[4] = "Virgin america";
+
+    var family = new Array("Mark", "Bert", "Joan", "Kerry", "Rick");
+    //Literal array 
+    var states = ["Connecticut","New York", "Vermont","Texas","Washington"];
+
+    function output(){
+        document.getElementById("output").innerHTML = airlines[0] + "</br>" + family[0] + "</br>" + states[0];
+    }  
+    </script>
+    <p id="output"></p>
+    <button onclick="output()">Click me</button>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My first JavaScript</title>
+</head>
+<body>
+    <script>
+        var score = 50;
+        var highScore = 100;
+        function checkScore(){
+            if(score > highScore){
+                highScore = score ;
+                document.getElementById("output").innerHTML= "You have the new highscore. Congratulation !" + highScore;
+            } else {
+                document.getElementById("output").innerHTML="Your score isn't highest right now. :("
+            }
+        }
+        </script>
+
+        <p id="output"></p>
+        <button onclick="checkScore()"> check score </button>
+    
+</body>
+</html>

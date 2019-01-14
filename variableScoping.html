@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VariableScoping</title>
+    <script type="text/javascript">
+        //Global Scope
+        var myDog = "sawyer";
+        function Dog(myDog){
+            //local Scope
+            var myDog3 = myDog;
+            alert("This is the local variable: " + myDog3);
+            return myDog3;
+        }
+
+        var myDog2 = Dog("Spot");
+
+        document.writeln("This is the global variable : " + myDog);
+        document.writeln("<BR>This is the \" private \" local variable returned by the function: " + myDog2 );
+        document.writeln(myDog3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

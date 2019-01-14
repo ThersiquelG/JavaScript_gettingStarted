@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Object</title>
+    <script type="text/javascript">
+    function Car(model, distancedMoved, timeElapsed){
+        this.model = model;
+        this.distancedMoved = distancedMoved;
+        this.timeElapsed = timeElapsed;
+        //Create a reference to a function to use it as a method
+        this.velocity = function (){
+            var result = this.distancedMoved / this.timeElapsed;
+            return result;
+        }
+    }
+
+    var myCar = new Car("Audi",120,1.2);
+    document.writeln(
+            "The model of the car is : " + myCar.model + "<br>" +
+            "The distance travalled is  : " + myCar.distancedMoved + "<br>" +
+            "The time elasped is : " + myCar.timeElapsed + "<br>" + 
+            "The velocity is : " + myCar.velocity() + "km/h"
+    );
+
+
+
+    /*
+    for(x in myCar){
+        document.writeln(myCar[x] + "<br>");
+    }
+    */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

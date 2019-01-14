@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loop through Array</title>
+  </head>
+  <body>
+    <script>
+      var airlines = new Array();
+      airlines[0] = "Delta";
+      airlines[1] = "US airways";
+      airlines[2] = "American";
+      airlines[3] = "jetBlue";
+      airlines[4] = "Virgin america";
+      airlines[5] = "France";
+      airlines[6] = "Madrid" ;
+      airlines[7] = "Santiago";
+      airlines[8] = "Tokyo";
+
+      function output(){
+          var len = airlines.length;
+          for(var i=0; i < len;i ++){
+              document.getElementById("output").innerHTML += airlines[i] + "</br>";
+          }
+      }
+    </script>
+    <p id="output"></p>
+    <button onclick="output()">Click me</button>
+  </body>
+</html>

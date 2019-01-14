@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SwitchStatement</title>
+  </head>
+  <body>
+    <script>
+      var zipCode = "06653";
+      var town ;
+      function checkZip() {
+        switch (zipCode) {
+          case "06611":
+            town = "Trumbnull";
+            break;
+          case "06066":
+            town = "Vermon";
+            break;
+          case "06443":
+            town = "Madison";
+            break;
+          case "06880": 
+          town= "Westport";
+          default:
+          town= "No match"
+        }
+        document.getElementById("output").innerHTML= "Town : " + town;
+      }
+    </script>
+    <p id="output"></p>
+    <button onclick="checkZip()">Check Score</button>
+  </body>
+</html>
